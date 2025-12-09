@@ -3,6 +3,8 @@ function nextGenaration() {
   for(let i=0; i<TOTAL; i++){
       birds[i] = pickOne();
   }
+  generation++;
+  savedBirds = [];
 }
 
 function pickOne() {

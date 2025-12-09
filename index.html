@@ -1,15 +1,77 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
-    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
-    <script language="javascript" type="text/javascript" src="sketch.js"></script>
-    <script language="javascript" type="text/javascript" src="bird.js"></script>
-    <script language="javascript" type="text/javascript" src="pipe.js"></script>
-    <script language="javascript" type="text/javascript" src="matrix.js"></script>
-    <script language="javascript" type="text/javascript" src="nn.js"></script>
-    <script language="javascript" type="text/javascript" src="ga.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neuroevolution Flappy Bird - AI Learning Demo</title>
+  <meta name="description" content="Watch AI learn to play Flappy Bird through neuroevolution - genetic algorithms and neural networks implemented from scratch">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      color: white;
+      text-align: center;
+      margin: 0 0 10px 0;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .subtitle {
+      color: rgba(255,255,255,0.9);
+      text-align: center;
+      margin: 0 0 20px 0;
+      font-size: 1.2em;
+    }
+    canvas {
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      border-radius: 8px;
+    }
+    .info {
+      margin-top: 20px;
+      color: white;
+      text-align: center;
+      max-width: 800px;
+    }
+    .info a {
+      color: #4FD1C5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <script language="javascript" type="text/javascript" src="bird.js"></script>
+  <script language="javascript" type="text/javascript" src="pipe.js"></script>
+  <script language="javascript" type="text/javascript" src="matrix.js"></script>
+  <script language="javascript" type="text/javascript" src="nn.js"></script>
+  <script language="javascript" type="text/javascript" src="ga.js"></script>
 </head>
 <body>
+  <main>
+    <h1>🧠 Neuroevolution Flappy Bird</h1>
+    <p class="subtitle">Watch 300 AI birds learn through evolution and neural networks</p>
+    <div id="canvas-container"></div>
+    <div class="info">
+      <p>🧬 Each bird has its own neural network brain that evolves through generations</p>
+      <p>📚 <a href="https://github.com/theQuarky/neuroevolution-flappybird" target="_blank">Learn how it works</a> | Built with JavaScript & p5.js</p>
+    </div>
+  </main>
 </body>
 </html>
