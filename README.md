@@ -482,6 +482,15 @@ Contributions are welcome! Ideas for improvement:
 - [ ] Graph of fitness over generations
 - [ ] Replay best performer
 
+## 🔒 Security Note
+
+This project loads p5.js libraries from cdnjs.cloudflare.com CDN with `crossorigin="anonymous"` attribute. For production applications, it's recommended to:
+- Add Subresource Integrity (SRI) hashes to CDN scripts
+- Host libraries locally or use a package manager
+- Implement Content Security Policy (CSP)
+
+For this educational project, using the trusted cdnjs CDN is acceptable.
+
 ## 📝 Credits
 
 - **Original Concept**: Based on Coding Train's Neuroevolution tutorial
