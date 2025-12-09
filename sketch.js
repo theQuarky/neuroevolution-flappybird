@@ -15,6 +15,7 @@ var pipes;
 var parallax = 0.8;
 var score = 0;
 var maxScore = 0;
+var generation = 1;
 var birdSprite;
 var pipeBodySprite;
 var pipePeakSprite;
@@ -112,8 +113,14 @@ function draw() {
 
 function showScores() {
   textSize(32);
-  text('score: ' + score, 1, 32);
-  text('record: ' + maxScore, 1, 64);
+  fill(255);
+  stroke(0);
+  strokeWeight(4);
+  text('Score: ' + score, 10, 40);
+  text('Record: ' + maxScore, 10, 75);
+  text('Generation: ' + generation, 10, 110);
+  text('Alive: ' + birds.length + ' / ' + TOTAL, 10, 145);
+  noStroke();
 }
 
 function gameover() {
